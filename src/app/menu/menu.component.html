@@ -5,12 +5,11 @@
 <mat-grid-list cols="3">
   <mat-grid-tile *ngFor="let dish of dishes">
     <mat-card class="example-card" routerLink="./dish">
-      <img width="200px" mat-card-image src="assets/images/{{dish.imagepath}}" alt="Photo of a Shiba Inu">
+      <img width="200px" height="200px" mat-card-image src="assets/images/{{dish.imagepath}}" alt="Photo of a Shiba Inu">
       <mat-card-content>
+        <h3>{{dish.name}}</h3>
         <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
+          {{dish.description}}
         </p>
       </mat-card-content>
       <mat-card-actions>

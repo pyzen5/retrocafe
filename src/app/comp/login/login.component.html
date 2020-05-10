@@ -1,1 +1,23 @@
-<p>login works!</p>
+<h1 mat-dialog-title>Login</h1>
+<div mat-dialog-content>
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Username or Mobile No.</mat-label>
+            <input matInput placeholder="Enter your username" value="">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Enter your password!!" value="">
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-flat-button color="primary" (click)="onLogin()">Login</button>
+    <button mat-flat-button color="warn" (click)="onNoClick()">Cancel</button>
+    <mat-divider></mat-divider>
+    <div class="register-section">
+        <span>Don't have an account? Register </span>
+        <button mat-button (click)="gotoRegister()">Here</button>
+    </div>
+    
+</div>

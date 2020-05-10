@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,32 +8,49 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   dishes = [{
-    imagepath: 'chapati.jpg'
+    imagepath: 'chapati.jpg',
+    name: 'Chapati',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nulla et massa ultrices blandit id quis sem. Vestibulum convallis nunc quis augue ultrices, eget placerat lectus pellentesque.'
   },
   {
-    imagepath: 'cookies.jpg'
+    imagepath: 'cookies.jpg',
+    name: 'Cookies',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nulla et massa ultrices blandit id quis sem. Vestibulum convallis nunc quis augue ultrices, eget placerat lectus pellentesque.'
   },
   {
-    imagepath: 'fruitbowl.jpg'
+    imagepath: 'fruitbowl.jpg',
+    name: 'Fruit Bowl',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nulla et massa ultrices blandit id quis sem. Vestibulum convallis nunc quis augue ultrices, eget placerat lectus pellentesque.'
   },
   {
-    imagepath: 'kulcha.jpg'
+    imagepath: 'kulcha.jpg',
+    name: 'Kulcha',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nulla et massa ultrices blandit id quis sem. Vestibulum convallis nunc quis augue ultrices, eget placerat lectus pellentesque.'
   },
   {
-    imagepath: 'macaroni.jpg'
+    imagepath: 'macaroni.jpg',
+    name: 'Macaroni',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nulla et massa ultrices blandit id quis sem. Vestibulum convallis nunc quis augue ultrices, eget placerat lectus pellentesque.'
   },
   {
-    imagepath: 'pancake.jpg'
+    imagepath: 'pancake.jpg',
+    name: 'Pancake',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nulla et massa ultrices blandit id quis sem. Vestibulum convallis nunc quis augue ultrices, eget placerat lectus pellentesque.'
   },
   {
-    imagepath: 'pizza.jpg'
+    imagepath: 'pizza.jpg',
+    name: 'Pizza',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nulla et massa ultrices blandit id quis sem. Vestibulum convallis nunc quis augue ultrices, eget placerat lectus pellentesque.'
   },
   {
-    imagepath: 'roticurry.jpg'
+    imagepath: 'roticurry.jpg',
+    name: 'Roti curry',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nulla et massa ultrices blandit id quis sem. Vestibulum convallis nunc quis augue ultrices, eget placerat lectus pellentesque.'
   }];
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    // this.router.navigate(['dish'])
   }
 
 }
