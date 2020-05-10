@@ -1,9 +1,5 @@
-<p>menu works!</p>
-<!-- <div *ngFor="let dish of dishes">
-    <img width="200" height="100" src="assets/images/{{dish.imagepath}}">
-</div> -->
 <mat-grid-list cols="3">
-  <mat-grid-tile *ngFor="let dish of dishes">
+  <mat-grid-tile *ngFor="let dish of menuList">
     <mat-card class="example-card" routerLink="./dish">
       <img width="200px" height="200px" mat-card-image src="assets/images/{{dish.imagepath}}" alt="Photo of a Shiba Inu">
       <mat-card-content>

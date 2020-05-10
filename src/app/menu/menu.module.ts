@@ -5,6 +5,8 @@ import { MenuRoutingModule } from './menu-routing.module';
 import { MenuComponent } from './menu.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatChipsModule} from '@angular/material/chips';
 import { DishComponent } from './dish/dish.component';
 
 @NgModule({
@@ -13,7 +15,9 @@ import { DishComponent } from './dish/dish.component';
     CommonModule,
     MenuRoutingModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatIconModule,
+    MatChipsModule
   ]
 })
 export class MenuModule { }
