@@ -33,6 +33,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 import { appReducers } from './ngrx/reducers/app.reducers';
+import { MenuEffects } from './ngrx/effects/menu.effects';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,7 @@ import { appReducers } from './ngrx/reducers/app.reducers';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     StoreModule.forRoot(appReducers, {}),
     !environment.production ? StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }) : [],
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([MenuEffects]),
     // StoreRouterConnectingModule.forRoot()
   ],
   providers: [

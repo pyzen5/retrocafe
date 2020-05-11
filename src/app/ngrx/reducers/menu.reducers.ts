@@ -4,7 +4,8 @@ import * as MenuActions from '../actions/menu.actions';
 
 const menuReducer = createReducer(
     initialMenuState,
-    on(MenuActions.SetMenu, (state, { payload }) => (payload))
+    on(MenuActions.SetMenu, (state, { payload }) => (payload)),
+    on(MenuActions.GetMenuSuccess, (state, { payload }) => (payload)),
 );
 
 export function MenuReducer(state: IMenuState[] | undefined, action: Action) {
