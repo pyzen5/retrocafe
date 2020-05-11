@@ -29,7 +29,7 @@ export class AppComponent {
       isadmin: 1
     };
     this.store.dispatch(ProfileActions.SetProfile({payload: a}));
-    let ab: IMenuState = {
+    const ab: IMenuState = {
       name: 'roti',
       imagepath: 'roti.png',
       description: 'lorem ipsum'

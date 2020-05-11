@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     this.backendService.login(this.login).subscribe(data => {
       this.dialogRef.close();
       console.log(data);
-      this.router.navigate(['profile'])
+      this.router.navigate(['profile']);
     }, error => {
       console.log(error);
     });
