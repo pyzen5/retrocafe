@@ -1,21 +1,25 @@
 
-<form class="register-form">
+<form class="register-form" [formGroup]="registerForm" (ngSubmit)="register()">
     <h2>Register</h2>
     <mat-form-field class="example-full-width">
-        <mat-label>Full Name</mat-label>
-        <input matInput placeholder="ENter your username" value="">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstname" placeholder="Enter your First Name" value="">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastname" placeholder="Enter your Last Name" value="">
     </mat-form-field>
     <mat-form-field class="example-full-width">
         <mat-label>Email Id</mat-label>
-        <input matInput type="email" placeholder="Enter your password!!" value="">
+        <input matInput formControlName="email" type="email" placeholder="Enter your Email!!" value="">
     </mat-form-field>
     <mat-form-field class="example-full-width">
         <mat-label>Mobile Number</mat-label>
-        <input matInput type="tel" placeholder="Enter your password!!" value="">
+        <input matInput formControlName="mobile" type="tel" placeholder="Enter your Mobile!!" value="">
     </mat-form-field>
     <mat-form-field class="example-full-width">
         <mat-label>Password</mat-label>
-        <input matInput type="password" placeholder="Enter your password!!" value="">
+        <input matInput formControlName="password" type="password" placeholder="Enter your password!!" value="">
     </mat-form-field>
-    <button mat-flat-button color="primary">Register</button>
+    <button mat-flat-button color="primary" type="submit" [disabled]="!registerForm.valid">Register</button>
 </form>
