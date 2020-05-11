@@ -2,12 +2,12 @@
 <div mat-dialog-content>
     <form class="example-form">
         <mat-form-field class="example-full-width">
-            <mat-label>Username or Mobile No.</mat-label>
-            <input matInput placeholder="Enter your username" value="">
+            <mat-label>Email or Mobile No.</mat-label>
+            <input name="email" matInput placeholder="Enter your username" value="" [(ngModel)]="login.email">
         </mat-form-field>
         <mat-form-field class="example-full-width">
             <mat-label>Password</mat-label>
-            <input matInput type="password" placeholder="Enter your password!!" value="">
+            <input name="password" matInput type="password" placeholder="Enter your password!!" value="" [(ngModel)]="login.password">
         </mat-form-field>
     </form>
 </div>

@@ -24,7 +24,8 @@ import {MatDividerModule} from '@angular/material/divider';
 
 
 
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AppInterceptor } from './services/app.interceptor';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatDividerModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent],
   entryComponents: [LoginComponent]
 })
