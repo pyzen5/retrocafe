@@ -5,6 +5,8 @@ import { map, catchError } from 'rxjs/operators';
 import { dishes } from './mockdata';
 import * as moment from 'moment';
 import { Dish } from '../models/dish';
+import { Profile } from '../models/profile';
+import { Login } from '../models/login';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +20,7 @@ export class BackendService {
   }
 
   getProfile() {
-    return this.http.get(this.apiUrl + 'profile/getuser').pipe(
+    return this.http.get<Profile>(this.apiUrl + 'profile/getuser').pipe(
       map(data => {
         return data;
       })
@@ -29,10 +31,10 @@ export class BackendService {
   }
 
   login(data) {
-    return this.http.post(this.apiUrl + 'app/login', data).pipe(
+    return this.http.post<Login>(this.apiUrl + 'app/login', data).pipe(
       map(authData => {
-        const expiresAt = moment().add(authData['expiresIn'], 'second');
-        localStorage.setItem('id_token', authData['idToken']);
+        const expiresAt = moment().add(authData.expiresIn, 'second');
+        localStorage.setItem('id_token', authData.idToken);
         localStorage.setItem('expires_at', JSON.stringify(expiresAt.valueOf()));
         return authData;
       })
