@@ -4,8 +4,10 @@ import { LoginComponent } from './comp/login/login.component';
 import { BackendService } from './services/backend.service';
 import { Store } from '@ngrx/store';
 import * as ProfileActions from './ngrx/actions/profile.actions';
+import * as MenuActions from './ngrx/actions/menu.actions';
 import { Profile } from './models/profile';
 import { IAppState } from './ngrx/state/app.state';
+import { IMenuState } from './ngrx/state/menu.state';
 
 @Component({
   selector: 'app-root',
@@ -27,6 +29,12 @@ export class AppComponent {
       isadmin: 1
     };
     this.store.dispatch(ProfileActions.SetProfile({payload: a}));
+    let ab: IMenuState = {
+      name: 'roti',
+      imagepath: 'roti.png',
+      description: 'lorem ipsum'
+    };
+    this.store.dispatch(MenuActions.SetMenu({payload: [ab]}));
   }
 
   openDialog(): void {
