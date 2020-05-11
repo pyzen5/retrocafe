@@ -5,7 +5,8 @@
         <a routerLink="/about">About Us</a>
         <a routerLink="/contact">Contact Us</a>
         <a routerLink="/menu">Menu</a>
-        <span (click)="login.emit()">Login</span>        
+        <span *ngIf="!isLogged" (click)="login.emit()">Login</span>  
+        <!-- <span *ngIf="isLogged">Log Out</span>       -->
     </div>
 </mat-toolbar>
 

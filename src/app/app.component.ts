@@ -10,6 +10,7 @@ import { BackendService } from './services/backend.service';
 })
 export class AppComponent {
   title = 'retrocafe';
+  isLogged = this.backendService.isLoggedIn();
   constructor(public dialog: MatDialog, public backendService: BackendService) {}
 
   openDialog(): void {

@@ -7,13 +7,17 @@ import * as moment from 'moment';
 import { Dish } from '../models/dish';
 import { Profile } from '../models/profile';
 import { Login } from '../models/login';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BackendService {
-  apiUrl = 'http://localhost:3000/api/';
-  constructor(private http: HttpClient) { }
+  apiUrl = environment.apiUrl;
+
+  constructor(private http: HttpClient) {
+    console.log(this.apiUrl);
+  }
 
   getFeaturedDish() {
     return this.http.get<Dish>(this.apiUrl + 'app/featured');

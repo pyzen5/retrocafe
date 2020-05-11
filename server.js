@@ -19,6 +19,7 @@ app.use(function (req, res, next) {
   }
 });
 
+app.use(express.static('dist/retrocafe'));
 app.use("/api", apiRoutes);
 
 app.get("/", (req, res) => res.send("Server is running!!"));
