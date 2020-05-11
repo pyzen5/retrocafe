@@ -23,8 +23,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-
-
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppInterceptor } from './services/app.interceptor';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -33,6 +31,8 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
+
+import { appReducers } from './ngrx/reducers/app.reducers';
 
 @NgModule({
   declarations: [
@@ -62,10 +62,10 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
     MatDividerModule,
     MatToolbarModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot(appReducers, {}),
     !environment.production ? StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }) : [],
     EffectsModule.forRoot([]),
-    StoreRouterConnectingModule.forRoot()
+    // StoreRouterConnectingModule.forRoot()
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true }
