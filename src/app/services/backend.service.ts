@@ -4,6 +4,7 @@ import { of, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import { dishes } from './mockdata';
 import * as moment from 'moment';
+import { Dish } from '../models/dish';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class BackendService {
   constructor(private http: HttpClient) { }
 
   getMenuList() {
-    return this.http.get(this.apiUrl + 'app/menu');
+    return this.http.get<Dish[]>(this.apiUrl + 'app/menu');
   }
 
   getProfile() {

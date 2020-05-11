@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { BackendService } from '../services/backend.service';
+import { Dish } from '../models/dish';
 
 @Component({
   selector: 'app-menu',
@@ -8,7 +9,7 @@ import { BackendService } from '../services/backend.service';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  menuList = [];
+  menuList: Dish[];
   constructor(private router: Router, private backendService: BackendService) { }
 
   ngOnInit(): void {
