@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from 'src/app/services/backend.service';
+import { Dish } from 'src/app/models/dish';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  featuredDish: Dish;
+  constructor(public backendService: BackendService) { }
 
   ngOnInit(): void {
+    this.backendService.getFeaturedDish().subscribe(data => this.featuredDish = data, err => console.log(err));
   }
 
 }

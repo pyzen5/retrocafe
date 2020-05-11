@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const {user, dishes} = require('../mockdata');
+const {user, dishes, featured} = require('../mockdata');
 const jwt = require("jsonwebtoken");
 const router = express.Router();
 const fs = require("fs");
@@ -8,6 +8,10 @@ const RSA_PRIVATE_KEY = fs.readFileSync("./pvt.key");
 
 router.get("/", (req, res) => {
     res.status(200).json({msg: 'hello'});
+})
+
+router.get("/featured", (req, res) => {
+  res.status(200).json(featured);
 })
 
 router.get("/menu", (req, res) => {

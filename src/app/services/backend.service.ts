@@ -15,6 +15,10 @@ export class BackendService {
   apiUrl = 'http://localhost:3000/api/';
   constructor(private http: HttpClient) { }
 
+  getFeaturedDish() {
+    return this.http.get<Dish>(this.apiUrl + 'app/featured');
+  }
+
   getMenuList() {
     return this.http.get<Dish[]>(this.apiUrl + 'app/menu');
   }
