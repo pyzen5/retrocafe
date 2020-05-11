@@ -1,9 +1,13 @@
-import { IProfile } from '../../models/profile.interface';
-
 export interface IProfileState {
-    profile: IProfile;
+    firstname: string;
+    lastname: string;
+    email: string;
+    mobile: string;
 }
 
 export const initialProfileState: IProfileState = {
-    profile: null
+    firstname: null,
+    lastname: null,
+    email: null,
+    mobile: null
 };

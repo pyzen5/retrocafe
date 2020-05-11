@@ -4,7 +4,7 @@ import * as ProfileActions from '../actions/profile.actions';
 
 const profileReducer = createReducer(
     initialProfileState,
-    on(ProfileActions.SetProfile, (state, { payload }) => ({ ...state, profile: payload }))
+    on(ProfileActions.SetProfile, (state, { payload }) => ({ ...state, ...payload }))
 );
 
 export function ProfileReducer(state: IProfileState | undefined, action: Action) {

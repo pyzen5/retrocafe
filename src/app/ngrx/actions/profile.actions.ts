@@ -1,6 +1,6 @@
 import { createAction, props } from '@ngrx/store';
-import { IProfile } from '../../models/profile.interface';
+import { IProfileState } from '../state/profile.state';
 
 export const GetProfile = createAction('[Profile] Get Profile');
-export const SetProfile = createAction('[Profile] Set Profile', props<{ payload: IProfile }>());
+export const SetProfile = createAction('[Profile] Set Profile', props<{ payload: IProfileState }>());
 // export const SetProfileData = createAction('[Profile] Set Profile', props<{payload: IProfile}>());
