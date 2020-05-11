@@ -1,0 +1,25 @@
+.space-seperator {
+    flex: 1 1 auto;
+}
+.header{
+    .brand {
+        cursor: pointer;
+    }
+    .navlist {
+        display: flex;
+        justify-content: end;
+        a, span{
+            text-decoration: none;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: medium;
+            cursor: pointer;
+        }
+        a:hover, span:hover {            
+            background-color: lightblue;
+            border-radius: 5px;
+        }
+
+    }
+}

@@ -1,14 +1,15 @@
-<p>home works!</p>
-
-<div>
-    <mat-card class="example-card" style="width: 400px;">
-        <img width="200px" height="200px" mat-card-image src="assets/images/{{featuredDish.imagepath}}"
-            alt="Photo of a Shiba Inu">
-        <mat-card-content>
-            <h3>{{featuredDish.name}}</h3>
-            <p>
-                {{featuredDish.description}}
-            </p>
-        </mat-card-content>
-    </mat-card>
+<div class="home-page">
+    <div>
+        <h1>Featured Dish</h1>
+        <mat-card *ngIf="featuredDish" class="example-card" style="width: 400px;">
+            <img width="200px" height="200px" mat-card-image src="assets/images/{{featuredDish.imagepath}}"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <h3>{{featuredDish.name}}</h3>
+                <p>
+                    {{featuredDish.description}}
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
 </div>

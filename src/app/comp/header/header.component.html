@@ -1,6 +1,12 @@
-<a routerLink="/home">Home</a> |
-<a routerLink="/about">About</a> |
-<a routerLink="/contact">Contact</a> |
-<a routerLink="/menu">Menu</a> |
-<a routerLink="/profile">Profile</a> |
-<a routerLink="/register">Register</a> |
+<mat-toolbar color="primary" class="header">
+    <span class="brand" routerLink="/home">Retro Cafe</span>
+    <span class="space-seperator"></span>
+    <div class="navlist">
+        <a routerLink="/about">About Us</a>
+        <a routerLink="/contact">Contact Us</a>
+        <a routerLink="/menu">Menu</a>
+        <span (click)="login.emit()">Login</span>        
+    </div>
+</mat-toolbar>
+
+<!-- <button (click)="onLogout()">Logout</button> -->
