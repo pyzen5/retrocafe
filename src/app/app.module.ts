@@ -14,14 +14,14 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatCardModule} from '@angular/material/card';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 
@@ -29,6 +29,10 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppInterceptor } from './services/app.interceptor';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 @NgModule({
   declarations: [
@@ -57,7 +61,11 @@ import { environment } from '../environments/environment';
     MatButtonModule,
     MatDividerModule,
     MatToolbarModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    StoreModule.forRoot({}, {}),
+    !environment.production ? StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }) : [],
+    EffectsModule.forRoot([]),
+    StoreRouterConnectingModule.forRoot()
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true }
