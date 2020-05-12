@@ -1,25 +1,53 @@
 .space-seperator {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
-.header{
-    .brand {
-        cursor: pointer;
+.header {
+  display: flex;
+  padding: 20px;
+  .brand {
+    cursor: pointer;
+    color: white;
+  }
+  .navlist {
+    display: flex;
+    justify-content: flex-end;
+    a,
+    span {
+      text-decoration: none;
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: medium;
+      cursor: pointer;
     }
-    .navlist {
-        display: flex;
-        justify-content: flex-end;
-        a, span{
-            text-decoration: none;
-            color: white;
-            padding-left: 10px;
-            padding-right: 10px;
-            font-size: medium;
-            cursor: pointer;
-        }
-        a:hover, span:hover {            
-            background-color: lightblue;
-            border-radius: 5px;
-        }
+    a:hover,
+    span:hover {
+      background-color: lightblue;
+      border-radius: 5px;
+    }
+  }
+}
 
-    }
+.bg-header {
+  background-image: url("/assets/images/noodles.jpg");
+  background-size: cover;
+  height: 650px;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content {
+  /* justify-self: center; */
+  align-self: center;
+  color: white;
+  margin: auto 0;
+  display: flex;
+  border: 2px solid grey;
+  background-color: black;
+  opacity: 0.9;
+  /* height: 100px; */
+  /* width: 80%; */
+  text-align: center;
+  padding: 14px;
 }

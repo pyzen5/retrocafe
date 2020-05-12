@@ -1,13 +1,19 @@
-<mat-toolbar color="primary" class="header">
-    <span class="brand" routerLink="/home">Retro Cafe</span>
-    <span class="space-seperator"></span>
-    <div class="navlist">
-        <a routerLink="/about">About Us</a>
-        <a routerLink="/contact">Contact Us</a>
-        <a routerLink="/menu">Menu</a>
-        <span *ngIf="!isLogged" (click)="login.emit()">Login</span>  
-        <!-- <span *ngIf="isLogged">Log Out</span>       -->
+<div class="bg-header">
+    <div class="header">
+        <span class="brand" routerLink="/home">Retro Cafe</span>
+        <span class="space-seperator"></span>
+        <div class="navlist">
+            <a routerLink="/about">About Us</a>
+            <a routerLink="/contact">Contact Us</a>
+            <a routerLink="/menu">Menu</a>
+            <span *ngIf="!isLogged" (click)="login.emit()">Login</span>
+            <!-- <span *ngIf="isLogged">Log Out</span>       -->
+        </div>
     </div>
-</mat-toolbar>
+    <div class="header-content">
+        <h1>Welcome to Retro Cafe</h1>
+    </div>
+</div>
+
 
 <!-- <button (click)="onLogout()">Logout</button> -->
