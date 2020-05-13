@@ -40,3 +40,10 @@ export const dishes = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nulla et massa ultrices blandit id quis sem. Vestibulum convallis nunc quis augue ultrices, eget placerat lectus pellentesque.'
     }
 ];
+
+export const featured = {
+    imagepath: 'pancake.jpg',
+    name: 'Pancake',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nulla et massa ultrices blandit id quis sem. Vestibulum convallis nunc quis augue ultrices, eget placerat lectus pellentesque.',
+  };

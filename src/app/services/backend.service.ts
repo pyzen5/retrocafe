@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { of, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-import { dishes } from './mockdata';
+import { dishes, featured } from './mockdata';
 import * as moment from 'moment';
 import { Dish } from '../models/dish';
 import { Profile } from '../models/profile';
@@ -20,11 +20,13 @@ export class BackendService {
   }
 
   getFeaturedDish() {
-    return this.http.get<Dish>(this.apiUrl + 'app/featured');
+    return of(featured);
+    // return this.http.get<Dish>(this.apiUrl + 'app/featured');
   }
 
   getMenuList() {
-    return this.http.get<Dish[]>(this.apiUrl + 'app/menu');
+    return of(dishes);
+    // return this.http.get<Dish[]>(this.apiUrl + 'app/menu');
   }
 
   getProfile() {
