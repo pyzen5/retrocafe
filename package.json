@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --prod",
-    "heroku-postinstall": "ng build --prod"
+    "heroku-postinstall": "ng build --prod",
+    "deploy": "git push origin --delete gh-pages && ng build --prod --base-href https://pyzen5.github.io/retrocafe/ && ngh --dir=dist/retrocafe"
   },
   "private": true,
   "dependencies": {
