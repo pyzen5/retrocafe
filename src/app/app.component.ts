@@ -8,6 +8,7 @@ import * as MenuActions from './ngrx/actions/menu.actions';
 import { Profile } from './models/profile';
 import { IAppState } from './ngrx/state/app.state';
 import { IMenuState } from './ngrx/state/menu.state';
+import {OverlayContainer} from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-root',
@@ -16,9 +17,17 @@ import { IMenuState } from './ngrx/state/menu.state';
 })
 export class AppComponent {
   myObj = {name: 'Phani', age: 30};
+  isDarkTheme = false;
   title = 'retrocafe';
   isLogged = this.backendService.isLoggedIn();
-  constructor(public dialog: MatDialog, public backendService: BackendService, private store: Store<IAppState>) { }
+  // tslint:disable-next-line: max-line-length
+  constructor(public overlayContainer: OverlayContainer, public dialog: MatDialog, public backendService: BackendService, private store: Store<IAppState>) { }
+
+  toggleTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+    this.isDarkTheme ? this.overlayContainer.getContainerElement().classList.add('rc-dark-theme') :
+    this.overlayContainer.getContainerElement().classList.remove('rc-dark-theme');
+  }
 
   triggerAction() {
     let a: Profile;

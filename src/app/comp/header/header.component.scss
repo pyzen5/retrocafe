@@ -22,7 +22,7 @@
     }
     a:hover,
     span:hover {
-      background-color: lightblue;
+      background-color: lightslategrey;
       border-radius: 5px;
     }
   }
@@ -31,8 +31,9 @@
 .bg-header {
   background-image: url("../../../assets/images/noodles.jpg");
   background-size: cover;
-  height: 650px;
+  height: 300px;
   background-attachment: fixed;
+  background-position-y: center;
   display: flex;
   flex-direction: column;
 }
@@ -47,4 +48,7 @@
   background-color: rgba($color: #000000, $alpha: 0.5);
   text-align: center;
   padding: 14px;
+}
+.navlist {
+  align-items: center;
 }

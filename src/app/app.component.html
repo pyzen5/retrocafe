@@ -1,11 +1,13 @@
-<app-header (login)="openDialog()" (logout)="onLogout()" [isLogged]="isLogged"></app-header>
-<router-outlet></router-outlet>
-<router-outlet name="popup"></router-outlet>
-<app-footer></app-footer>
-<hr>
-<div *ngIf="false Else falsy ">
-    If
+<div [class.rc-dark-theme]="isDarkTheme">
+    <app-header (login)="openDialog()" (logout)="onLogout()" [isLogged]="isLogged" (toggleTheme)="toggleTheme()"></app-header>
+    <router-outlet></router-outlet>
+    <router-outlet name="popup"></router-outlet>
+    <app-footer></app-footer>
+    <hr>
+    <div *ngIf="false Else falsy ">
+        If
+    </div>
+    <ng-template #falsy>
+        {{myObj|keyvalue|json}}
+    </ng-template>
 </div>
-<ng-template #falsy>
-    {{myObj|keyvalue|json}}
-</ng-template>

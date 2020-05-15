@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
   @Input() isLogged;
   @Output() login = new EventEmitter();
   @Output() logout = new EventEmitter();
+  @Output() toggleTheme = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
