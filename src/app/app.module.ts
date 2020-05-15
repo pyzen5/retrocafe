@@ -14,16 +14,6 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatCardModule } from '@angular/material/card';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppInterceptor } from './services/app.interceptor';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -32,6 +22,7 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { NgmatModule } from './ngmat/ngmat.module';
 
 import { appReducers } from './ngrx/reducers/app.reducers';
 import { MenuEffects } from './ngrx/effects/menu.effects';
@@ -58,18 +49,10 @@ import { ReceipedetailsComponent } from './receipe/receipedetails/receipedetails
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgmatModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatCardModule,
-    MatGridListModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatIconModule,
-    MatInputModule,
-    MatButtonModule,
-    MatDividerModule,
-    MatToolbarModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     StoreModule.forRoot(appReducers, {}),
     !environment.production ? StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }) : [],
