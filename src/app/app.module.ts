@@ -34,6 +34,9 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 import { appReducers } from './ngrx/reducers/app.reducers';
 import { MenuEffects } from './ngrx/effects/menu.effects';
+import { ReceipeComponent } from './receipe/receipe.component';
+import { ReceipevideoComponent } from './receipe/receipevideo/receipevideo.component';
+import { ReceipedetailsComponent } from './receipe/receipedetails/receipedetails.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,10 @@ import { MenuEffects } from './ngrx/effects/menu.effects';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ReceipeComponent,
+    ReceipevideoComponent,
+    ReceipedetailsComponent
   ],
   imports: [
     BrowserModule,
