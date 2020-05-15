@@ -15,6 +15,7 @@ import { IMenuState } from './ngrx/state/menu.state';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  myObj = {name: 'Phani', age: 30};
   title = 'retrocafe';
   isLogged = this.backendService.isLoggedIn();
   constructor(public dialog: MatDialog, public backendService: BackendService, private store: Store<IAppState>) { }

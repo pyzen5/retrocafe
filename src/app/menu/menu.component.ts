@@ -35,4 +35,7 @@ export class MenuComponent implements OnInit, OnDestroy {
     this.subscription$.unsubscribe();
   }
 
+  delteDish(dish: Dish) {
+    this.store.dispatch(MenuActions.DeleteDish({payload: dish}));
+  }
 }

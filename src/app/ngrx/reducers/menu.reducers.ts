@@ -6,6 +6,7 @@ const menuReducer = createReducer(
     initialMenuState,
     on(MenuActions.SetMenu, (state, { payload }) => (payload)),
     on(MenuActions.GetMenuSuccess, (state, { payload }) => (payload)),
+    on(MenuActions.DeleteDish, (state, { payload }) => state.filter(x => x.name !== payload.name)),
 );
 
 export function MenuReducer(state: IMenuState[] | undefined, action: Action) {
