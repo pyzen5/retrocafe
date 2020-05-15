@@ -1,0 +1,114 @@
+{
+  "configVersion": 1,
+  "timestamp": 1589545723510,
+  "index": "https://pyzen5.github.io/retrocafe/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://pyzen5.github.io/retrocafe/5-es2015.5538e4f565907ef8d9d0.js",
+        "https://pyzen5.github.io/retrocafe/5-es5.5538e4f565907ef8d9d0.js",
+        "https://pyzen5.github.io/retrocafe/6-es2015.db6fc756602e613765a9.js",
+        "https://pyzen5.github.io/retrocafe/6-es5.db6fc756602e613765a9.js",
+        "https://pyzen5.github.io/retrocafe/favicon.ico",
+        "https://pyzen5.github.io/retrocafe/index.html",
+        "https://pyzen5.github.io/retrocafe/main-es2015.0960b321f501089a560c.js",
+        "https://pyzen5.github.io/retrocafe/main-es5.0960b321f501089a560c.js",
+        "https://pyzen5.github.io/retrocafe/manifest.webmanifest",
+        "https://pyzen5.github.io/retrocafe/polyfills-es2015.690002c25ea8557bb4b0.js",
+        "https://pyzen5.github.io/retrocafe/polyfills-es5.9e286f6d9247438cbb02.js",
+        "https://pyzen5.github.io/retrocafe/runtime-es2015.5d4e85561ffcf66896c9.js",
+        "https://pyzen5.github.io/retrocafe/runtime-es5.5d4e85561ffcf66896c9.js",
+        "https://pyzen5.github.io/retrocafe/styles.af24379f3cf63d80988a.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://pyzen5.github.io/retrocafe/assets/icons/icon-128x128.png",
+        "https://pyzen5.github.io/retrocafe/assets/icons/icon-144x144.png",
+        "https://pyzen5.github.io/retrocafe/assets/icons/icon-152x152.png",
+        "https://pyzen5.github.io/retrocafe/assets/icons/icon-192x192.png",
+        "https://pyzen5.github.io/retrocafe/assets/icons/icon-384x384.png",
+        "https://pyzen5.github.io/retrocafe/assets/icons/icon-512x512.png",
+        "https://pyzen5.github.io/retrocafe/assets/icons/icon-72x72.png",
+        "https://pyzen5.github.io/retrocafe/assets/icons/icon-96x96.png",
+        "https://pyzen5.github.io/retrocafe/assets/images/chapati.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/cookies.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/fruitbowl.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/kulcha.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/macaroni.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/noodles.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/pancake.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/pepperoni-pizza.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/pizza.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/roll.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/roticurry.jpg",
+        "https://pyzen5.github.io/retrocafe/assets/images/salad.jpg",
+        "https://pyzen5.github.io/retrocafe/noodles.88f172d17e30c136c766.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://pyzen5.github.io/retrocafe/5-es2015.5538e4f565907ef8d9d0.js": "4c484f11214c19185855080fc5166edfb529fd7e",
+    "https://pyzen5.github.io/retrocafe/5-es5.5538e4f565907ef8d9d0.js": "bce54ff846c3e1d39d4773770d69cbc7f045491f",
+    "https://pyzen5.github.io/retrocafe/6-es2015.db6fc756602e613765a9.js": "9a981f4c041034647f09185cf045acd3ddcffb42",
+    "https://pyzen5.github.io/retrocafe/6-es5.db6fc756602e613765a9.js": "d9b8b7876e31740909dceb59e35f07a34cba9b42",
+    "https://pyzen5.github.io/retrocafe/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://pyzen5.github.io/retrocafe/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://pyzen5.github.io/retrocafe/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://pyzen5.github.io/retrocafe/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://pyzen5.github.io/retrocafe/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://pyzen5.github.io/retrocafe/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://pyzen5.github.io/retrocafe/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://pyzen5.github.io/retrocafe/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://pyzen5.github.io/retrocafe/assets/images/chapati.jpg": "a5d2192a586fee08d7435b765a72f86b009ea8f8",
+    "https://pyzen5.github.io/retrocafe/assets/images/cookies.jpg": "2ba1b031594d760eeac46ed11be5bd0000a95bc3",
+    "https://pyzen5.github.io/retrocafe/assets/images/fruitbowl.jpg": "0f537ea25c94246ecc7a69e88c5ac079603c5374",
+    "https://pyzen5.github.io/retrocafe/assets/images/kulcha.jpg": "bf2f4363dfd23a8f19a62be7530b317481ed491c",
+    "https://pyzen5.github.io/retrocafe/assets/images/macaroni.jpg": "21830510e6e458fce44ec01f51f862b5e74c158a",
+    "https://pyzen5.github.io/retrocafe/assets/images/noodles.jpg": "3260d1c48e0b14f08d35a88887a2f715c014acb8",
+    "https://pyzen5.github.io/retrocafe/assets/images/pancake.jpg": "9dbbe0853b3b4408404770c858d441ac79ff4ccd",
+    "https://pyzen5.github.io/retrocafe/assets/images/pepperoni-pizza.jpg": "06852a800d040c571731dbe872351b067e0ee90d",
+    "https://pyzen5.github.io/retrocafe/assets/images/pizza.jpg": "68b85e80cf325bcd922383181adda3effa87884a",
+    "https://pyzen5.github.io/retrocafe/assets/images/roll.jpg": "72f2344883b015219e88d04c492bdd4e4841e3c3",
+    "https://pyzen5.github.io/retrocafe/assets/images/roticurry.jpg": "9780c73785ff714eb38d2a4229235924a8bab49f",
+    "https://pyzen5.github.io/retrocafe/assets/images/salad.jpg": "4301587a0f2b0d8bffc43be9da67141f4bc7123b",
+    "https://pyzen5.github.io/retrocafe/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://pyzen5.github.io/retrocafe/index.html": "158edd3bb28f359aa393fbe48818e3610e0b4906",
+    "https://pyzen5.github.io/retrocafe/main-es2015.0960b321f501089a560c.js": "7445537daddb93e9f5dded0b3baae9a9482abc3b",
+    "https://pyzen5.github.io/retrocafe/main-es5.0960b321f501089a560c.js": "2cd3b75b8910adcb3d1bb4ade8e43e0f9bded15c",
+    "https://pyzen5.github.io/retrocafe/manifest.webmanifest": "bdb2c5ceaacba591c692c8809f6c1f33381b0628",
+    "https://pyzen5.github.io/retrocafe/noodles.88f172d17e30c136c766.jpg": "3260d1c48e0b14f08d35a88887a2f715c014acb8",
+    "https://pyzen5.github.io/retrocafe/polyfills-es2015.690002c25ea8557bb4b0.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "https://pyzen5.github.io/retrocafe/polyfills-es5.9e286f6d9247438cbb02.js": "89222a28dbabb780fc372d33834080e0cd3083d9",
+    "https://pyzen5.github.io/retrocafe/runtime-es2015.5d4e85561ffcf66896c9.js": "2476f44f9e5c1bcf6414bf8638487234334926c7",
+    "https://pyzen5.github.io/retrocafe/runtime-es5.5d4e85561ffcf66896c9.js": "8a461bf27ea772a61d9bf275196165adc1050800",
+    "https://pyzen5.github.io/retrocafe/styles.af24379f3cf63d80988a.css": "e2d25291af887dd83eb341caacf76b35957fde93"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
